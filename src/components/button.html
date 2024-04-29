@@ -1,0 +1,5 @@
+<each loop="item in {{ list }}">
+    <button class="{{item.classBtn}}">
+        <a class="{{item.classLink}}" href="{{item.link}}">{{ item.content }}</a>
+    </button>
+</each>

@@ -1,0 +1,8 @@
+<each loop="item in {{ list }}">
+    <img src="{{item.linkImg}}" alt="{{item.alt}}">
+    <p class="{{item.classNameTitle}}">"{{item.titleContent}}" </p>
+    <p class="{{item.classNameCost}}"> "{{item.valCost}}"</p>
+    <p class="{{item.classNameDescription}}">"{{item.textDescription}}"</p>
+    <p class="{{item.classNameEvaluate}}">"{{item.valueEvaluate}}"</p>
+    <img src="{{item.classNameIconStar}}" alt="icon star">
+</each>

@@ -1,0 +1,27 @@
+<header class="header">
+    <img class="header__icon--menu" src="../assets/icon/menu.svg" alt="menu">
+    <img class="header__icon--logo" src="../assets/icon/Logo_frame1.svg" alt="logo">
+    <div class="header__center">
+        <ul>
+            <include src="./components/navList.html" locals='{
+                    "list":[
+                    {"link":"#","content":"Home"},
+                    {"link":"#","content":"Discover"},
+                    {"link":"#","content":"Special Deals"},
+                    {"link":"#","content":"Contact"}
+                    ]
+                }'>
+            </include>
+        </ul>
+
+    </div>
+    <div class="header__right">
+        <include src="./components/button.html" locals='{
+            "list":[
+            {"classBtn":"header__right--btnleft","classLink":"header__right--btnleft--link","link":"#","content":"Log In"},
+            {"classBtn":"header__right--btnRight","classLink":"header__right--btnRight--link","link":"#","content":"Sign Up"}
+            ]
+        }'>
+        </include>
+    </div>
+</header>
